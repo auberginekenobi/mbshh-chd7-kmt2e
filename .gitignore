@@ -1,0 +1,9 @@
+**/.DS_Store
+data/*
+!data/peaks
+data/peaks/*.pdf
+!data/peaks/*.bed
+figures/
+manuscript/
+**/out/
+**/.ipynb_checkpoints
