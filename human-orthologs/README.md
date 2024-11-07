@@ -7,9 +7,9 @@ Map putative regulators of genes of interest in mouse SHHMB models to human tumo
 - [CrossMap](https://crossmap.sourceforge.net/) or another reference coordinate remapper (eg. UCSC liftOver) 
 
 ## Data
-- Download human MB Hi-C data from GEO ID [GSE240410](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240410):
+- Download human MB Hi-C data from GEO ID [GSE240410](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240410)
 - Download human MB ATAC-seq data from GEO ID [GSE240830](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240830)
-- (Mouse enhancers from Kohei)
+- (Mouse enhancers from Kohei), see [data/peaks](../data/peaks)
 - mm10ToHg38.over.chain.gz from https://hgdownload.soe.ucsc.edu/goldenPath/mm10/liftOver/
 The human MBSHH samples with both ATAC and Hi-C data are MB102, MB234, MB244, MB268 and RCMB56.
 
