@@ -12,7 +12,7 @@ conda activate crossmap
 CHAIN=~/anno/chain/mm10ToHg38.over.chain.gz
 BED=$1
 
-generate_filename() {
+generate_filestem() {
     # Input: A filename like 08_RD_Gene.bed
     local filename="$1"
     
@@ -23,13 +23,16 @@ generate_filename() {
     gene_name=$(echo "$gene_name" | tr 'a-z' 'A-Z')
     
     # Construct the new filename in the desired format
-    echo "${gene_name}_enhancers.hg38.bed"
+    echo "${gene_name}"
 }
 
-OUT=$(generate_filename $BED)
 DIR=$(dirname $BED)
+STEM=$(generate_filestem $BED)
+OUT=$DIR/${STEM}_enhancers.hg38.bed
+LOG=$DIR/${STEM}_mapping.txt
 
-CrossMap bed $CHAIN $BED $DIR/$OUT
+CrossMap region $CHAIN $BED > $LOG
+awk -F'\t' 'NF == 8 {OFS="\t"; print $5, $6, $7, $8}' $LOG > $OUT
 
 conda deactivate
 

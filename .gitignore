@@ -2,6 +2,8 @@
 data/*
 !data/peaks
 data/peaks/*.pdf
+data/peaks/*.unmap
+data/peaks/*.txt
 !data/peaks/*.bed
 figures/
 manuscript/
