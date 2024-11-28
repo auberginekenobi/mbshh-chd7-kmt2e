@@ -1,4 +1,4 @@
-name: sc-multiome-test
+name: sc-multiome
 
 channels:
   - conda-forge
@@ -19,8 +19,17 @@ dependencies:
   - htslib # tabix
   - r-ggallivial
   - bioconductor-slingshot # trajectory analysis
+
+  # scCustomize dependencies
+  - r-cairo
+  - r-ggrastr
+  - r-devtools
+  - r-reticulate
+  - anndata
+  # No conda build for sccustomize >=3.0.0; must install with github:
+  # devtools::install_github("samuel-marsh/scCustomize", ref = "release/3.0.0")
   
-    # required for scATAC:
+  # required for scATAC:
   - r-signac # Seurat for scATAC
   - bioconductor-ensdb.mmusculus.v79
   - bioconductor-bsgenome.mmusculus.ucsc.mm10

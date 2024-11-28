@@ -1,0 +1,21 @@
+name: scgen
+
+channels:
+  - pytorch
+  - conda-forge
+  - bioconda
+  - r
+
+dependencies:
+  - pytorch
+  - ipykernel
+  - pip
+  - pip:
+    #- scgen # 20241123 release version is bugged
+    - git+https://github.com/theislab/scgen.git
+
+# Install this environment from file using
+# conda env create -f scgen.yml
+
+# Link this env to jupyter using
+# conda activate scgen; python -m ipykernel install --user --name scgen --display-name "scgen"; conda deactivate

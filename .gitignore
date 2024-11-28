@@ -9,3 +9,4 @@ figures/
 manuscript/
 **/out/
 **/.ipynb_checkpoints
+single-cell/tests/data/pancreas.h5ad
