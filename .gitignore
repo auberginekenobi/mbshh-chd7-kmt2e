@@ -1,12 +1,14 @@
 **/.DS_Store
-data/*
-!data/peaks
-data/peaks/*.pdf
-data/peaks/*.unmap
-data/peaks/*.txt
-!data/peaks/*.bed
+**/data/*
+# Un-ignore specific files in a specific subdirectory; see https://stackoverflow.com/questions/1248570/how-do-i-tell-git-to-ignore-everything-except-a-subdirectory
+!human-orthologs/data
+human-orthologs/data/*
+!human-orthologs/data/peaks
+human-orthologs/data/peaks/*
+!human-orthologs/data/peaks/*.bed
 figures/
 manuscript/
 **/out/
 **/.ipynb_checkpoints
 single-cell/tests/data/pancreas.h5ad
+gsea/results
