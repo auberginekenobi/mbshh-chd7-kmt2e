@@ -1,0 +1,25 @@
+# Differential gene expression: volcano plots etc.
+name: sc-de-plotting
+
+channels:
+  - conda-forge
+  - bioconda
+  - r
+
+dependencies:
+  - r-irkernel
+  - jupyter_client
+  - bioconductor-enhancedvolcano
+  - r-tidyverse
+  - r-patchwork
+  - r-extrafont
+  - r-svglite
+
+# Install this environment from file using
+# CONDA_SUBDIR=osx-64 conda env create -f sc-de-plotting.yml
+
+# Link this env to jupyter using
+# NAME=sc-de-plotting; conda activate $NAME; Rscript -e "IRkernel::installspec(name = '${NAME}', displayname = '${NAME}')"; conda deactivate
+
+# Use osx-64 for all other package installations:
+# conda config --env --set subdir osx-64

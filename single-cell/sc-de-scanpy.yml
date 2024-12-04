@@ -1,0 +1,18 @@
+# Differential gene expression: scanpy
+name: sc-de-scanpy
+
+channels:
+  - conda-forge
+  - bioconda
+  - r
+
+dependencies:
+  - anndata
+  - scanpy
+  - ipykernel
+
+# Install this environment from file using
+# conda env create -f sc-de-scanpy.yml
+
+# Link this env to jupyter using
+# NAME=sc-de-scanpy; conda activate $NAME; python -m ipykernel install --user --name $NAME --display-name $NAME; conda deactivate

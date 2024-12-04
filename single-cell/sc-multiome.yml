@@ -28,6 +28,9 @@ dependencies:
   - anndata
   # No conda build for sccustomize >=3.0.0; must install with github:
   # devtools::install_github("samuel-marsh/scCustomize", ref = "release/3.0.0")
+
+  # zellkonverter dependencies
+  - bioconductor-zellkonverter
   
   # required for scATAC:
   - r-signac # Seurat for scATAC
