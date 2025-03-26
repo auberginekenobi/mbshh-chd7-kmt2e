@@ -1,5 +1,5 @@
 # chd7 - kmt2c
-Analyses for Wang *et al.*, in preparation.
+Analyses for Wang *et al.*, "Chromatin Modification Abnormalities by CHD7 and KMT2C Loss Promote Medulloblastoma Progression", *Cell Reports*, 2025.
 
 ## Directory
 ```
